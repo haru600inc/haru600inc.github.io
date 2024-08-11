@@ -1,0 +1,21 @@
+{
+  "name": "Haru600, Inc.",
+  "short_name": "Haru600, Inc.",
+  "description": "Explore tons of safe discord servers that we partnered with and enhance your experience!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/JCsHrbW/Untitled826-20240810011728.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/JCsHrbW/Untitled826-20240810011728.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
