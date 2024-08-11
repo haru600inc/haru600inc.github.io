@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Haru600, Inc. - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Haru600, Inc.">
+<meta property="og:description" content="Explore tons of Discord server we partnered with and join a community that suits you!">
+<meta property="og:image" content="https://i.ibb.co/JCsHrbW/Untitled826-20240810011728.png">
+<meta property="og:url" content="https://haru.pogy-bot.xyz">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Haru600, Inc.">
+  <meta name="keywords" content="server, servers, discord, discord servers, haruyt600, haru600 inc, best discord servers, community, gaming, memes">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="apple-touch-icon" href="https://i.ibb.co/JCsHrbW/Untitled826-20240810011728.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Haru600, Inc.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="twitter:creator" content="@haruyt600">
+  
+    <style>
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #F1F0EA;
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .banner {
+            width: 100%;
+            background-color: #EDECE3;
+            border-bottom: 2px solid #4B1C03;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .banner img {
+            border: 2px solid #4B1C03;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .title {
+            color: #4B1C03;
+            margin: 10px 0;
+            font-size: 2em;
+        }
+
+        .description {
+            color: #6E6E6B;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #EDECE3;
+            border-top: 2px solid #4B1C03;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-top: auto;
+        }
+
+        .server-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .server-card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #EDECE3;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            border: 2px solid #4B1C03;
+        }
+
+        .server-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            background-color: #ADD8E6;
+            color: white;
+            margin-right: 10px;
+            flex-shrink: 0;
+            border: 2px solid #4B1C03;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .server-card:hover {
+            box-shadow: 0 4px 20px rgba(75, 28, 3, 0.8), 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .server-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .server-name {
+            color: #4B1C03;
+            font-size: 1.3em;
+            margin: 0;
+        }
+
+        .server-description {
+            font-size: 1em;
+            color: #6E6E6B;
+            margin: 5px 0;
+        }
+
+        .member-count {
+            font-size: 1em;
+            color: #4B1C03;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+
+        .apply-button {
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 40px;
+            background-color: #4B1C03;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            position: absolute;
+            font-size: 1em;
+        }
+
+        .count-animation {
+            font-weight: bold;
+            font-size: 1em;
+            color: #4B1C03;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <button class="apply-button" onclick="window.open('https://forms.gle/bAMm99hNhWofFmPW6', '_blank')">APPLY</button>
+        <img src="https://i.ibb.co/JCsHrbW/Untitled826-20240810011728.png" alt="Logo">
+        <div class="title"><strong>Haru600, Inc.</strong></div>
+        <div class="description">We've partnered with <span id="server-count" class="count-animation">0</span> servers to make your Discord experience better!</div>
+    </div>
+
+    <div class="server-cards" id="server-cards">
+    </div>
+
+    <div class="footer">
+        &copy 2024 Haru600, Inc. All rights reserved.
+    </div>
+
+    <script>
+        const servers = [
+            { id: '996541011515932752', icon: 'https://i.ibb.co/59CXB6r/IMG-5135.png', name: 'Haru\'s Empire', description: 'The official server of Haru600, Inc.', invite: 'https://discord.gg/QrF3q9kHPu' },
+            { id: '1023597455926886531', icon: 'https://i.ibb.co/NYjFgVS/IMG-5136.png', name: '⚡️•Legendary-Lightning•⚡️', description: 'A server created by the youtuber Artiman', invite: 'https://discord.gg/5fXyeW7Huh' },
+        ];
+
+        const serverCardsContainer = document.getElementById('server-cards');
+        const serverCountElement = document.getElementById('server-count');
+        const serverCount = servers.length;
+
+        servers.forEach(server => {
+            const serverCard = document.createElement('a');
+            serverCard.href = server.invite;
+            serverCard.target = '_blank';
+            serverCard.className = 'server-card';
+
+            serverCard.innerHTML = `
+                <div class="server-icon" style="background-image: url(${server.icon}); background-size: cover; background-position: center;">
+                    ${!server.icon ? server.name[0] : ''}
+                </div>
+                <div class="server-details">
+                    <div class="server-name"><strong>${server.name}</strong></div>
+                    <div class="server-description">${server.description}</div>
+                </div>
+            `;
+
+            serverCardsContainer.appendChild(serverCard);
+        });
+
+        let currentCount = 0;
+        function animateCount() {
+            if (currentCount < serverCount) {
+                currentCount++;
+                serverCountElement.textContent = currentCount;
+                setTimeout(animateCount, 200);
+            } else {
+                serverCountElement.textContent = serverCount;
+            }
+        }
+        animateCount();
+    </script>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+    
+</body>
+</html>
