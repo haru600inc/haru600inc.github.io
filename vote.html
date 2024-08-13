@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vote for Snakebite Chuck</title>
+    <style>
+        body {
+            background-color: #1B1C34;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 90%;
+        }
+
+        img {
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+        }
+
+        .button {
+            background-color: #5657B1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #4748A1;
+        }
+        .url {
+            align-items: center;
+            vertical-align: middle;
+            height: 80px;
+            width: auto;
+            border-radius: 0;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="url" src="https://cdn3.emoji.gg/emojis/4898-link-icon.png">
+        <p>
+            This link will redirect you to vote for <br>
+            <img src="https://i.ibb.co/NStRFWW/Untitled775-20240723121814.png" alt="Snakebite Chuck"> 
+            <strong>Snakebite Chuck</strong>.
+        </p>
+        <p>Do you wish to continue?</p>
+        <button class="button" onclick="openLink()">CONTINUE</button>
+    </div>
+
+    <script>
+        function openLink() {
+            window.open('http://make.supercell.com/en/creation/snakebite-chuck', '_blank');
+        }
+    </script>
+</body>
+</html>
